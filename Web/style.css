@@ -18,6 +18,11 @@
     
     
 } */
+ .allnav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+ }
 
 
 ul {
@@ -28,6 +33,7 @@ ul {
 }
 .top-nav {
     justify-content: space-between;
+    background-color: #fff;
 }
 
 ul li {
@@ -730,6 +736,11 @@ img{
         width: 25px;
         align-items: center;
         
+    }
+    .allnav {
+        position: sticky;
+        top: 0;
+        z-index: 9999;
     }
 
     
