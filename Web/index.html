@@ -13,16 +13,19 @@
 </head>
 <body>
     <!-- Frist-Navbar -->
-        
-        <div class="navdiv">
-            <nav class="navbar">
+        <div class="allnav">
+            <div class="navdiv">
+            <nav class="navbar hidden-phone">
                
                 <ul class="top-nav">
-                    <div class="logo"><a href="#"><img class="logo" src="/image/logo-removebg-preview.png" alt=""></a></div>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Solutions</a></li>
-                    <li><a href="#">Industries</a></li>
-                    <li><a href="#">For you </a></li>
+                    <div class="bar">
+                        <div class="logo"><a href="#"><img class="logo" src="/image/logo-removebg-preview.png" alt=""></a></div>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Industries</a></li>
+                        <li><a href="#">For you </a></li>
+
+                    </div>
                     
                     <ul class="nav-right">
                         <li><a href="#">Shop</a></li>
@@ -33,7 +36,26 @@
                 </ul>
                    
             </nav>
-            
+            <!-- nav for mobile -->
+            <div class="nav-mobile hidden-com "                                         ;">
+                <div class="mobile">
+                    <a class="bar" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></a>
+                    <a class="glass" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a>
+                </div>
+                
+                <!-- logo-mobile -->
+                 <div class="logo-mobile">
+                     <img src="/image/logo-removebg-preview.png" alt="">
+                    <!-- <div class="nv-logo">
+    
+                    </div> -->
+                    <!-- logo user -->
+                </div>
+                <div class="user-logo">
+                    <a href="#"><svg id="user-nv" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M406.5 399.6C387.4 352.9 341.5 320 288 320l-64 0c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3l64 0c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"/></svg></a>
+
+                </div>
+            </div>
         </div>
         <!-- Second-navbar -->
          <div class="navdiv2">
@@ -49,17 +71,55 @@
 <!-- carousel content -->
     <div class="carousel-content">
         <div class="carousel-image">
-            <img class="slides" src="/carousel/nvidia-dgx-spark-bm-l.jpg" alt="nvdia-dgx" style="width: 100%;">
-            <img class="slides" src="/carousel/data-center-bb300-l.jpg" alt="data-center" style="width: 100%;">
-            <img class="slides" src="/image/geforce-rtx-50-series-ari.jpg" alt="geforce" style="width: 100%;">
-            <img class="slides" src="/carousel/jetson-nano-shop-1360x300.jpg" alt="jetson" style="width: 100%;">
-            <img class="slides" src="/carousel/geforce-laptops-shop-banner-background-image-1360x300.jpg" alt="geforce-laptop" style="width: 100%;">
+            <div class="slides" id="slide1">
+                <div class="slide-content">
+                    <h1>NVIDIA DGX Spark</h1>
+                    <p>Thin and Powerful GeForce Laptops</p>
+                    <a href="">
+                        <button>Shop now</button></a>
+                </div>
+            </div>
+            <div class="slides" id="slide2">
+                 <div class="slide-content">
+                    <h1>Data Center</h1>
+                    <p>Take AI to the Edge.</p>
+                    <a href="">
+                        <button>Shop now</button></a>
+                </div>
+            </div>
+            <!-- <div class="slides" id="brokecontainer">
+                <h1>hwdwjoi</h1 >
+                <img id="broke" src="/image/geforce-rtx-50-series-ari.jpg" alt="geforce" style="width: 100%;">
+            </div> -->
+            <!-- got problem in 3  -->
+            <div class="slides" id="slide3">
+                <div class="slide-content">
+                    <h1>Robotics Marketplace</h1>
+                    <p>Buy the latest developer kits</p>
+                    <a href="">
+                        <button>Shop now</button></a>
+                </div>
+            </div>
+            <div class="slides" id="slide4">
+                <div class="slide-content">
+                    <h1>Worker by Day. Warrior by Night.</h1>
+                    <p>Thin and Powerful GeForce Laptops</p>
+                    <a href="">
+                        <button>Shop now</button></a>
+                </div>
+            </div>
+            
+            
         </div>
-    </div>
-    <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+        <div class="dots">
+                <a class="dot" onclick="currentSlide(1)"></a> 
+                <a class="dot" onclick="currentSlide(2)"></a> 
+                <!-- <a class="dot" onclick="currentSlide(3)"></a>  -->
+                <a class="dot" onclick="currentSlide(3)"></a> 
+                <a class="dot" onclick="currentSlide(4)"></a> 
+        </div>
+        
+        
     </div>
 <div class="fomat"
     <div class="col-flex">

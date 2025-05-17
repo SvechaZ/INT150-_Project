@@ -26,6 +26,9 @@ ul {
     flex-direction: row;
     
 }
+.top-nav {
+    justify-content: space-between;
+}
 
 ul li {
     margin-top: 29.2px;
@@ -33,6 +36,7 @@ ul li {
     justify-content: left;
     align-items: center;
 }
+
 .top-nav li {
     display: flex;
     justify-content: left;
@@ -41,6 +45,13 @@ ul li {
 }
 .navbar {
     height: 4rem;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 /* --------------------------------------nav -------------------------------------------------------*/
 
@@ -63,7 +74,7 @@ ul li {
 .nav-right {
     display: flex;
     flex-direction: row;
-    margin-left: 650px;
+    /* margin-left: 650px; */
     
 }
 .nav-right a {
@@ -127,6 +138,76 @@ ul li {
     flex-direction: column;
     
 }
+.slides-content {
+    color: white;   
+    width: fit-content;
+    position: relative;
+    top: 10rem;
+    z-index: 1000;
+    left:10rem;
+    
+}
+
+.slides-content h1 {
+    font-size: 2rem;
+    color: #76b900;
+}
+.slides-button{
+    background-color: #76b900;
+    text-decoration: none;
+    width: 30px;
+}
+.slides{
+    height: 300px;
+    color: white;
+    display: flex;
+}
+.slide-content{
+    margin-left: 10rem;
+    padding-top: 5rem;
+    width: fit-content;
+    height: 300px;
+}
+.slide-content h1{
+  margin-bottom: .5rem;
+  color: #fff;
+  font-size: 2.25rem;
+  max-width: 490px;
+}
+
+.slide-content p {
+    font-size: 1.45rem;
+    font-style: bold;
+}
+.slide-content a button{
+    color: #000000;
+    background-color: #76b900;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 550;
+    padding: 10px 35px;
+    margin-top: 10px;
+    border: none;
+}
+.dots *{
+    background-color: white;
+    display: block;
+    z-index: 20;
+    border-radius: 90px;
+    cursor: pointer;
+}
+.dots {
+    display: flex;
+    position: relative;
+    top: -50px;
+    left:45%;
+    gap: 20px;
+}
+.dot{
+    width: 13px;
+    height: 13px;
+    opacity: 0.5;
+}
 .sec-nav a svg path {
     fill: #fff;
     width: 10px;
@@ -135,6 +216,27 @@ ul li {
     width: 20px;
     display: none;
 }
+#slide1{
+    background-image: url(/carousel/nvidia-dgx-spark-bm-l.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#slide2{
+    background-image: url(/carousel/data-center-bb300-l.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+#slide3{
+    background-image: url(/carousel/jetson-nano-shop-1360x300.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+#slide4{
+    background-image: url(/carousel/geforce-laptops-shop-banner-background-image-1360x300.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
 
 /* -----------------------slide show------------------------- */
 
@@ -147,8 +249,10 @@ ul li {
 
 .carousel-image {
     object-fit: cover;
-    height: 100%;
+    height: 300px;
+    transition: all 0.5s;
 }
+  
 
 
 /*---------------------------------- enterprise-col------------------------------- */
@@ -582,7 +686,6 @@ img{
     display: flex;
    
 }
-
 /* ----------------------------------media----------------------------------------- */
 @media (max-width: 420px) {
     body   {
@@ -621,8 +724,35 @@ img{
         fill: white;
 
     }
-    .top-nav *{
+    .logo-mobile img {
+        justify-content: center;
+        display: flex;
+        width: 25px;
+        align-items: center;
+        
+    }
+
+    
+    .navbar {
         display: none;
+    }
+
+   
+    .nav-mobile a{
+        width: 13px;
+        /* height: 10px; */
+        display: flex;
+        justify-content: center;
+        /* margin-right: 3px; */
+    }
+
+    
+
+    .mobile {
+        /* margin-right: 280px; */
+        display: flex;
+        justify-content: center;
+        padding: 7px;
     }
     .row{
         flex-direction: column;
@@ -630,9 +760,7 @@ img{
     .subscribe{
         flex-direction: column;
     }
-    .row-en{
-        
-    }
+    
     .card{
         width: 100%;
     }
@@ -769,6 +897,72 @@ img{
         align-items: center;
         
     }
+    
+.mobile {
+    gap:.5rem;
+}
+
+.nav-mobile  {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 4rem 1fr 4rem;
+    
+}
+.logo-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-mobile img{
+    width: 80px;
+}
+
+
+.user-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slide-content {
+    padding-top:3rem ;
+    margin:0 2rem;
+    
+}
+#slide1{
+    background-position: center;
+}
+#slide2{
+    background-position: center;
+}
+#slide3{
+    background-position: center;
+}
+#slide4{
+    background-position: center;
+}
+.dots{
+    left: 37%;
+    top: -40px;
+}
+    
 
 }
 
+@media  screen and (max-width:861px) {
+    .format{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .hidden-phone {
+        display: none ; 
+    }
+}
+
+@media screen and (min-width:420px) {
+    .hidden-com {
+        display: none ;
+    }
+}

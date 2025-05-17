@@ -26,43 +26,36 @@ function showSlides (n) {
         dots[slideIndex-1].className += " active";
 
 }
-// -------------------------------------------------------------------------------------
-// const images = document.querySelectorAll('.slides'); 
-// const buttons = document.querySelectorAll('.dots'); 
+let autoSlideInterval = setInterval(() => {
+    plusslides(1);
+}, 3000);
 
-// let currentIndex = 0; 
+// Optional: Pause auto-slide on mouse hover (add to your HTML if needed)
+function pauseAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
 
+function resumeAutoSlide() {
+    autoSlideInterval = setInterval(() => {
+        plusslides(1);
+    }, 3000);
+}
 
-// function updateCarousel(index) {
-//   images.forEach(img => img.classList.remove('active'));
-//   buttons.forEach(btn => btn.classList.remove('active'));
-
-//   images[index].classList.add('active');
-//   buttons[index].classList.add('active');
-// }
-
-// // คลิกที่จุด
-// buttons.forEach((btn, idx) => {
-//   btn.addEventListener('click', () => {
-//     currentIndex = idx;
-//     updateCarousel(currentIndex);
-//   });
-// });
 
 // delay timing ------------------------------------------------------
-function myFunction() {
-    console.log("เรียกฟังก์ชันแล้ว", new Date().toLocaleTimeString());
-  }
+// function myFunction() {
+//     console.log("เรียกฟังก์ชันแล้ว", new Date().toLocaleTimeString());
+//   }
   
-  // เรียกทุก ๆ 2000 มิลลิวินาที (2 วินาที)
-  const intervalId = setInterval(plusslides(1), 200);
-  intervalId()
+//   // เรียกทุก ๆ 2000 มิลลิวินาที (2 วินาที)
+//   const intervalId = setInterval(plusslides(1), 200);
+//   intervalId()
 
   
-  // หยุดเรียกหลัง 10 วินาที
-  setTimeout(() => {
-    clearInterval(intervalId);
-    console.log("หยุดเรียกฟังก์ชัน");
-  }, 10000);
+//   // หยุดเรียกหลัง 10 วินาที
+//   setTimeout(() => {
+//     clearInterval(intervalId);
+//     console.log("หยุดเรียกฟังก์ชัน");
+//   }, 10000);
 
   
