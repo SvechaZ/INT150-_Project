@@ -58,6 +58,19 @@ ul li {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-left: 120px;
+}
+.search {
+     margin: 0 !important; 
+     display: flex;
+     background-color: #fff;
+     
+    }
+.search-2 {
+    border: 0;
+    margin: 0 !important;
+       
+    
 }
 /* --------------------------------------nav -------------------------------------------------------*/
 
@@ -106,6 +119,8 @@ ul li {
 }
 .sec-nav {
    margin-top: 10px;
+   /* display: flex; */
+   justify-content: space-between;
 }
 .sec-nav b {
     color: #fff;
@@ -122,6 +137,12 @@ ul li {
     margin-left:20px ;
 
 }
+
+
+.space {
+    
+    display: flex;
+}
 .user {
     width: 45px;
     display: flex;
@@ -133,8 +154,12 @@ ul li {
     margin-left: auto;
     width: 340px;
     height: 50px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     padding-left: 20px;
+    background-color: transparent;
+    /* outline: unset; */
+    border: 0;
+    
 }
 .carousel-content {
     position: relative;
@@ -713,7 +738,11 @@ img{
     .sec-nav b{
         margin-left: 0;
     }
-    .sec-nav *{
+    .sec-nav {
+       display: flex;
+       justify-content: space-between;
+    }
+    .sec-nav input {
         display: none;
     }
     .sec-nav a{
@@ -724,8 +753,14 @@ img{
     }
     .sec-nav #burger{
         display: block;
-        margin-left: auto;
+        /* margin-left: auto; */
+        width: 21px;
+        height: 21px;
+        margin-left: 175px;
+        
     }
+
+    
     .sec-nav #burger svg path{
         fill: white;
 
@@ -743,6 +778,9 @@ img{
         z-index: 9999;
     }
 
+    .bar {
+        padding: 0;
+    }
     
     .navbar {
         display: none;
@@ -934,6 +972,18 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30px;
+    
+}
+
+.bar-market {
+    width: 15px;
+    display: flex;
+    
+}
+
+#bar-market svg path {
+    fill: #fff;
 }
 .slide-content {
     padding-top:3rem ;
