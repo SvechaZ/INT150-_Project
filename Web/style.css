@@ -966,6 +966,7 @@ img{
     display: grid;
     width: 100%;
     grid-template-columns: 4rem 1fr 4rem;
+    background-color: #fff;
     
 }
 .logo-mobile {
