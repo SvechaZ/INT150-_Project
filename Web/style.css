@@ -258,22 +258,22 @@ ul li {
     display: none;
 }
 #slide1{
-    background-image: url(/carousel/nvidia-dgx-spark-bm-l.jpg);
+    background-image: url(../carousel/nvidia-dgx-spark-bm-l.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 #slide2{
-    background-image: url(/carousel/data-center-bb300-l.jpg);
+    background-image: url(../carousel/data-center-bb300-l.jpg);
     background-size:cover ;
     background-repeat: no-repeat;
 }
 #slide3{
-    background-image: url(/carousel/jetson-nano-shop-1360x300.jpg);
+    background-image: url(../carousel/jetson-nano-shop-1360x300.jpg);
     background-size:cover ;
     background-repeat: no-repeat;
 }
 #slide4{
-    background-image: url(/carousel/geforce-laptops-shop-banner-background-image-1360x300.jpg);
+    background-image: url(../carousel/geforce-laptops-shop-banner-background-image-1360x300.jpg);
     background-size:cover ;
     background-repeat: no-repeat;
 }
