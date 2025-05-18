@@ -347,7 +347,7 @@ img{
 }
 .chevron a:hover {
     position: relative;
-    ด ;
+    animation: move duration timing-function delay iteration-count direction fill-mode;
     animation-duration: .95s;
 }
 .chevron a svg {
